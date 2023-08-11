@@ -3,5 +3,5 @@ steps:
   args: ['pip3','install', '-r', 'requirements.txt', '--user']
   
 - name: 'python'
-  args: ['pip3','install', 'operation.py', '--user']
+  args: ['python3', 'operation.py', '--user']
   
