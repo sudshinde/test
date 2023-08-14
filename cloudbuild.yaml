@@ -11,7 +11,7 @@
 
 steps:
   -name: 'gcr.io/cloud-builders/gcloud'
-  entrypoint: 'bash'
-  args:
-    - 'c'
-    - 'echo "please approve"'
+   entrypoint: 'bash'
+   args:
+     - 'c'
+     - 'echo "please approve"'
