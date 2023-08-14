@@ -10,7 +10,7 @@
 #   args: ['python3', 'operation.py', 'test2','--user']
 
 steps:
-  -name: 'approval'
+  -name: 'python'
    type: pending-approval
    title: Step Title
    description: Step description
