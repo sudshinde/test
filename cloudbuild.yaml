@@ -10,7 +10,7 @@
 #   args: ['python3', 'operation.py', 'test2','--user']
 
 steps:
-  -name: 'gcr.io/cloud-builders/gcloud'
+  -name: 'python'
    entrypoint: 'bash'
    args:
      - 'c'
