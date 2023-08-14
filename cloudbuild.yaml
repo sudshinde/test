@@ -4,6 +4,7 @@ steps:
   
 - name: 'python'
   args: ['python3', 'operation.py', 'test1','--user']
+  requireApproval: true
 
 - name: 'python'
   args: ['python3', 'operation.py', 'test2','--user']
