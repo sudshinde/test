@@ -1,11 +1,15 @@
-steps:
-- name: 'python'
-  args: ['pip3','install', '-r', 'requirements.txt', '--user']
+# steps:
+# - name: 'python'
+#   args: ['pip3','install', '-r', 'requirements.txt', '--user']
   
-- name: 'python'
-  args: ['python3', 'operation.py', 'test1','--user']
+# - name: 'python'
+#   args: ['python3', 'operation.py', 'test1','--user']
 
-- name: 'approval stage'
+
+# - name: 'python'
+#   args: ['python3', 'operation.py', 'test2','--user']
+
+step_name:
   type: pending-approval
   title: Step Title
   description: Step description
@@ -13,7 +17,6 @@ steps:
     duration: 2
     finalState: approved
     timeUnit: minutes
-
-- name: 'python'
-  args: ['python3', 'operation.py', 'test2','--user']
-  
+  when:
+    branch:
+      only: [ main ]
