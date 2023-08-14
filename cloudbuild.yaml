@@ -10,14 +10,8 @@
 #   args: ['python3', 'operation.py', 'test2','--user']
 
 steps:
-  -name: 'python'
-   type: pending-approval
-   title: Step Title
-   description: Step description
-   timeout:
-   duration: 2
-    finalState: approved
-    timeUnit: minutes
-  when:
-    branch:
-      only: [ main ]
+  -name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: 'bash'
+  args:
+    - 'c'
+    - 'echo "please approve"'
