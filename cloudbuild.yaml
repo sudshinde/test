@@ -5,7 +5,14 @@ steps:
 - name: 'python'
   args: ['python3', 'operation.py', 'test1','--user']
   
-- requireApproval: true
+step_name:
+  type: pending-approval
+  title: Step Title
+  description: Step description
+  timeout:
+    duration: 2
+    finalState: approved
+    timeUnit: minutes
 
 - name: 'python'
   args: ['python3', 'operation.py', 'test2','--user']
