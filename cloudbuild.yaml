@@ -4,8 +4,8 @@ steps:
   
 - name: 'python'
   args: ['python3', 'operation.py', 'test1','--user']
-  
--name:
+
+- name: 'approval stage'
   type: pending-approval
   title: Step Title
   description: Step description
